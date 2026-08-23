@@ -1202,131 +1202,274 @@ img {
     }
 
 }
+
+
 /* =========================================
-   MENU DE DEMONSTRAÇÃO
+   IDENTIDADE VISUAL FINAL
 ========================================= */
 
-.demo-menu-badge {
-    display: inline-flex;
+.logo-icon {
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+}
 
-    align-items: center;
-    justify-content: center;
+.logo-icon img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
 
-    margin-bottom: 22px;
-
-    padding: 8px 16px;
-
-    border: 1px solid rgba(255, 255, 255, 0.35);
-
-    border-radius: 50px;
-
-    background: rgba(255, 255, 255, 0.08);
-
-    color: #ffffff;
-
-    font-size: 0.72rem;
-    font-weight: 700;
-
-    letter-spacing: 1.5px;
-
-    text-transform: uppercase;
-
-    backdrop-filter: blur(8px);
+.footer-logo .logo-icon {
+    background: transparent;
 }
 
 
 /* =========================================
-   DESTAQUE DA ESPECIALIDADE
+   HERO COM FOTOGRAFIAS
 ========================================= */
 
-.menu-specialty-card {
-    margin-bottom: 35px;
-
-    padding: 35px;
-
+.hero {
     background:
         linear-gradient(
+            90deg,
+            rgba(11, 45, 69, 0.94),
+            rgba(11, 45, 69, 0.72),
+            rgba(11, 45, 69, 0.30)
+        ),
+        url("../images/hero-home.jpg") center / cover no-repeat;
+}
+
+.menu-hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 120px 0;
+    background: var(--navy);
+}
+
+.menu-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background-image:
+        linear-gradient(
             135deg,
-            var(--navy),
-            var(--blue)
-        );
+            rgba(11, 45, 69, 0.93),
+            rgba(23, 107, 135, 0.76)
+        ),
+        var(--page-hero-image);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1.02);
+}
 
+.menu-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+        180deg,
+        rgba(7, 31, 48, 0.08),
+        rgba(7, 31, 48, 0.28)
+    );
+}
+
+.menu-hero--menu {
+    --page-hero-image: url("../images/hero-menu.jpg");
+}
+
+.menu-hero--sobre {
+    --page-hero-image: url("../images/hero-sobre.jpg");
+}
+
+.menu-hero--contactos {
+    --page-hero-image: url("../images/hero-contactos.jpg");
+}
+
+.menu-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================
+   FOTOGRAFIAS DO SITE
+========================================= */
+
+.photo-frame {
+    min-height: 500px;
     border-radius: 16px;
-
+    background-color: var(--blue-light);
+    background-image:
+        linear-gradient(
+            135deg,
+            rgba(11, 45, 69, 0.08),
+            rgba(23, 107, 135, 0.03)
+        ),
+        var(--photo-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     box-shadow: var(--shadow);
 }
 
-.menu-specialty-card .section-label {
-    color: #d9c18a;
+.photo-frame--peixe {
+    --photo-image: url("../images/peixe-grelhado.jpg");
 }
 
-.menu-specialty-card h3 {
-    margin-bottom: 10px;
-
-    color: var(--white);
-
-    font-size: 2rem;
+.photo-frame--restaurante {
+    --photo-image: url("../images/restaurante.jpg");
 }
 
-.menu-specialty-card p {
-    max-width: 650px;
+.photo-frame--pratos {
+    --photo-image: url("../images/pratos.jpg");
+}
 
-    margin-bottom: 0;
+.photo-frame--choco {
+    --photo-image: url("../images/choco-frito.jpg");
+}
 
-    color: rgba(255, 255, 255, 0.78);
+.photo-frame--carne {
+    --photo-image: url("../images/prato-carne.jpg");
+}
+
+.photo-frame--gallery {
+    min-height: 330px;
+}
+
+.menu-gallery {
+    padding: 90px 0;
+    background: var(--white);
+}
+
+.menu-gallery .menu-section-heading {
+    margin-bottom: 40px;
 }
 
 
 /* =========================================
-   AVISO DE DEMONSTRAÇÃO
+   SOBRE NÓS
 ========================================= */
 
-.demo-notice {
-    margin-top: 20px;
-
-    color: rgba(255, 255, 255, 0.65) !important;
-
-    font-size: 0.78rem !important;
-
-    font-style: italic;
+.about-values .about-card {
+    min-height: 320px;
+    border: 1px solid rgba(201, 164, 92, 0.16);
 }
 
-
-/* =========================================
-   PREÇO DE DEMONSTRAÇÃO
-========================================= */
-
-.menu-price-demo {
-    display: block;
-
-    margin-top: 5px;
-
+.about-values .about-card-icon {
+    width: 54px;
+    height: 54px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 24px;
+    border: 1px solid rgba(201, 164, 92, 0.55);
+    border-radius: 50%;
     color: var(--gold);
-
-    font-size: 0.7rem;
-
-    font-family: "Segoe UI", Arial, sans-serif;
-
-    font-weight: 500;
-
-    text-align: right;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.55rem;
 }
 
+
+/* =========================================
+   CONTACTOS
+========================================= */
+
+.contact-detail-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.35rem;
+}
+
+.contact-phone-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-phone-list a,
+.location a[href^="tel:"] {
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.contact-actions {
+    margin-top: 26px;
+}
+
+
+/* =========================================
+   MAPA
+========================================= */
+
+.location-placeholder {
+    overflow: hidden;
+}
+
+.location-placeholder iframe {
+    display: block;
+    width: 100%;
+}
+
+
+/* =========================================
+   RESPONSIVO — IMAGENS / HERO
+========================================= */
+
+@media (max-width: 991.98px) {
+    .menu-hero {
+        padding: 100px 0;
+    }
+
+    .photo-frame {
+        min-height: 430px;
+    }
+}
 
 @media (max-width: 575.98px) {
-
-    .menu-specialty-card {
-        padding: 25px;
+    .logo-icon {
+        width: 40px;
+        height: 40px;
     }
 
-    .menu-specialty-card h3 {
-        font-size: 1.6rem;
+    .hero {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(11, 45, 69, 0.95),
+                rgba(11, 45, 69, 0.70)
+            ),
+            url("../images/hero-home.jpg") center / cover no-repeat;
     }
 
-    .demo-menu-badge {
-        font-size: 0.65rem;
-
-        letter-spacing: 1px;
+    .menu-hero {
+        padding: 82px 0;
     }
 
+    .photo-frame {
+        min-height: 320px;
+    }
+
+    .photo-frame--gallery {
+        min-height: 260px;
+    }
+
+    .menu-gallery {
+        padding: 65px 0;
+    }
+
+    .contact-actions {
+        width: 100%;
+    }
+
+    .contact-actions .button {
+        width: 100%;
+    }
 }

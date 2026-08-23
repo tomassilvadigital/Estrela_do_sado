@@ -20,6 +20,9 @@
     <!-- CSS próprio -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Ícone do separador -->
+    <link rel="icon" type="image/svg+xml" href="images/logo-symbol.svg">
+
 </head>
 
 <body>
@@ -40,8 +43,8 @@
             <a class="navbar-brand restaurant-logo"
                href="index.html">
 
-                <span class="logo-icon">
-                    E
+                <span class="logo-icon" aria-hidden="true">
+                    <img src="images/logo-symbol.svg" alt="">
                 </span>
 
                 <span class="logo-text">
@@ -133,7 +136,7 @@
                     <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
 
                         <a class="nav-reservation"
-                           href="contacto.html">
+                           href="contacto.html#marcacao">
 
                             Fazer marcação
 
@@ -223,13 +226,7 @@
 
                 <div class="col-lg-6">
 
-                    <div class="image-placeholder">
-
-                        <span>
-                            Fotografia do peixe grelhado
-                        </span>
-
-                    </div>
+                    <div class="photo-frame photo-frame--peixe" role="img" aria-label="Peixe grelhado do Estrela do Sado"></div>
 
                 </div>
 
@@ -349,42 +346,19 @@
             <div class="schedule-box">
 
                 <div>
-
-                    <span class="section-label">
-                        HORÁRIO
-                    </span>
-
-                    <h2>
-                        Apenas almoços
-                    </h2>
-
+                    <span class="section-label">HORÁRIO</span>
+                    <h2>Apenas almoços</h2>
                     <p>
-                        Estamos abertos para almoço
-                        das 12:00 às 15:00,
-                        de segunda-feira a sábado.
+                        Estamos abertos de segunda-feira a sábado,
+                        das 11:30 às 15:30.
                     </p>
-
-                    <p>
-                        <strong>Domingo:</strong> encerrado.
-                    </p>
-
+                    <p><strong>Domingo:</strong> encerrado.</p>
                 </div>
 
-
                 <div class="schedule-time">
-
-                    <strong>
-                        12:00
-                    </strong>
-
-                    <span>
-                        —
-                    </span>
-
-                    <strong>
-                        15:00
-                    </strong>
-
+                    <strong>11:30</strong>
+                    <span>—</span>
+                    <strong>15:30</strong>
                 </div>
 
             </div>
@@ -401,25 +375,18 @@
 
         <div class="container text-center">
 
-            <span class="section-label">
-                MARCAÇÕES
-            </span>
-
-            <h2>
-                Queres garantir a tua mesa?
-            </h2>
+            <span class="section-label">MARCAÇÕES</span>
+            <h2>Queres garantir a tua mesa?</h2>
 
             <p>
                 Faz a tua marcação no dia anterior
                 ou no próprio dia até às 11:00.
             </p>
 
-            <a href="tel:+351265793486"
-               class="button button-primary">
-
-                Ligar: 265 793 486
-
-            </a>
+            <div class="hero-buttons justify-content-center contact-actions">
+                <a href="tel:+351265793486" class="button button-primary">265 793 486</a>
+                <a href="tel:+351919290050" class="button button-secondary">919 290 050</a>
+            </div>
 
         </div>
 
@@ -448,16 +415,15 @@
                     </h2>
 
                     <p>
-                        Rua Principal de Praias do Sado, nº 295<br>
+                        Rua Principal das Praias do Sado, 295<br>
                         2910-345 Setúbal
                     </p>
 
                     <p>
                         <strong>Telefone:</strong><br>
 
-                        <a href="tel:+351265793486">
-                            265 793 486
-                        </a>
+                        <a href="tel:+351265793486">265 793 486</a><br>
+                        <a href="tel:+351919290050">919 290 050</a>
                     </p>
 
 
@@ -476,7 +442,7 @@
                     <div class="location-placeholder">
 
                         <iframe
-                            src="https://www.google.com/maps?q=Rua+Principal+de+Praias+do+Sado+295,+2910-345+Setubal&output=embed"
+                            src="https://www.google.com/maps?q=Rua+Principal+das+Praias+do+Sado+295,+Setubal&output=embed"
                             width="100%"
                             height="350"
                             style="border:0;"
@@ -511,98 +477,64 @@
 
         <div class="row g-5">
 
-
             <div class="col-lg-6">
 
-                <a href="index.html"
-                   class="restaurant-logo footer-logo">
+                <a href="index.html" class="restaurant-logo footer-logo">
 
-                    <span class="logo-icon">
-                        E
+                    <span class="logo-icon" aria-hidden="true">
+                        <img src="images/logo-symbol.svg" alt="">
                     </span>
 
                     <span class="logo-text">
-
-                        <strong>
-                            Estrela do Sado
-                        </strong>
-
-                        <small>
-                            RESTAURANTE
-                        </small>
-
+                        <strong>Estrela do Sado</strong>
+                        <small>RESTAURANTE</small>
                     </span>
 
                 </a>
 
-
                 <p>
-                    Cozinha portuguesa caseira
+                    Cozinha portuguesa caseira,
+                    peixe grelhado e sabores tradicionais
                     nas Praias do Sado.
                 </p>
 
             </div>
 
-
             <div class="col-md-3">
 
-                <h3>
-                    Contacto
-                </h3>
+                <h3>Contacto</h3>
 
-                <a href="tel:+351265793486">
-                    265 793 486
-                </a>
+                <a href="tel:+351265793486">265 793 486</a>
+                <a href="tel:+351919290050">919 290 050</a>
 
-                                <!-- FACEBOOK -->
-
-                <a
-                    href="https://www.facebook.com/estreladosado/"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
+                <a href="https://www.facebook.com/estreladosado/"
+                   target="_blank"
+                   rel="noopener noreferrer">
                     Facebook
-
                 </a>
 
                 <p>
-                    Rua Principal de Praias do Sado, nº 295<br>
+                    Rua Principal das Praias do Sado, 295<br>
                     2910-345 Setúbal
                 </p>
 
                 <p>
                     Segunda a sábado<br>
-                    12:00 — 15:00
+                    11:30 — 15:30
                 </p>
 
-                <p>
-                    Domingo encerrado
-                </p>
+                <p>Domingo encerrado</p>
 
             </div>
 
-
             <div class="col-md-3">
 
-                <h3>
-                    Navegação
-                </h3>
+                <h3>Navegação</h3>
 
-                <a href="index.html">
-                    Início
-                </a>
-
-                <a href="menu.html">
-                    Menu
-                </a>
-
-                <a href="sobre.html">
-                    Sobre nós
-                </a>
-
-                <a href="contacto.html">
-                    Contactos
-                </a>
+                <a href="index.html">Início</a>
+                <a href="menu.html">Menu</a>
+                <a href="sobre.html">Sobre nós</a>
+                <a href="contacto.html">Contactos</a>
 
             </div>
 
@@ -610,18 +542,10 @@
 
     </div>
 
-
     <div class="footer-bottom">
-
         <div class="container">
-
-            <p>
-                © 2026 Estrela do Sado.
-                Todos os direitos reservados.
-            </p>
-
+            <p>© 2026 Estrela do Sado. Todos os direitos reservados.</p>
         </div>
-
     </div>
 
 </footer>

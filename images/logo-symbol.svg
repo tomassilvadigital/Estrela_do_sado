@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Estrela do Sado">
+  <circle cx="50" cy="50" r="47" fill="#0b2d45" stroke="#c9a45c" stroke-width="5"/>
+  <circle cx="50" cy="50" r="40" fill="none" stroke="#ffffff" stroke-opacity="0.72" stroke-width="1.8"/>
+  <path d="M50 17l7.7 20.8L80 38.5 62.5 52l5.8 21.5L50 61.2 31.7 73.5 37.5 52 20 38.5l22.3-.7z" fill="#c9a45c"/>
+  <path d="M20 72c10-7 20-7 30 0s20 7 30 0" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M22 80c9-5 18-5 28 0s19 5 28 0" fill="none" stroke="#176b87" stroke-width="4" stroke-linecap="round"/>
+</svg>

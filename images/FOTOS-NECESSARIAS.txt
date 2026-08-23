@@ -1,0 +1,37 @@
+FOTOGRAFIAS A COLOCAR NESTA PASTA
+
+Mantém exatamente estes nomes para o site mostrar as fotografias automaticamente:
+
+1. hero-home.jpg
+   Foto principal da página Início. Ideal: fachada, mesa bonita ou ambiente ligado ao Sado.
+
+2. hero-menu.jpg
+   Foto horizontal de comida / peixe grelhado para o topo da página Menu.
+
+3. hero-sobre.jpg
+   Foto horizontal do interior, fachada ou equipa/ambiente do restaurante.
+
+4. hero-contactos.jpg
+   Foto horizontal da fachada ou entrada do restaurante.
+
+5. peixe-grelhado.jpg
+   Foto boa do peixe grelhado (especialidade).
+
+6. restaurante.jpg
+   Foto do restaurante: interior ou fachada.
+
+7. pratos.jpg
+   Foto de vários pratos / mesa servida.
+
+8. choco-frito.jpg
+   Foto do choco frito.
+
+9. prato-carne.jpg
+   Foto de um prato de carne.
+
+DICAS:
+- Preferir fotografias horizontais.
+- Boa luz natural sempre que possível.
+- Evitar zoom digital.
+- Não cortar o prato nas extremidades.
+- Para os heros, deixar algum espaço livre na fotografia para o texto continuar legível.

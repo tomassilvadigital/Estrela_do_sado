@@ -20,6 +20,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Ícone do separador -->
+    <link rel="icon" type="image/svg+xml" href="images/logo-symbol.svg">
+
 </head>
 
 <body>
@@ -38,8 +41,8 @@
             <a class="navbar-brand restaurant-logo"
                href="index.html">
 
-                <span class="logo-icon">
-                    E
+                <span class="logo-icon" aria-hidden="true">
+                    <img src="images/logo-symbol.svg" alt="">
                 </span>
 
                 <span class="logo-text">
@@ -127,7 +130,7 @@
                     <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
 
                         <a class="nav-reservation"
-                           href="contacto.html">
+                           href="contacto.html#marcacao">
 
                             Fazer marcação
 
@@ -158,7 +161,7 @@
      HERO
 ========================================= -->
 
-<section class="menu-hero">
+<section class="menu-hero menu-hero--sobre">
 
     <div class="container menu-hero-content">
 
@@ -191,52 +194,38 @@
 
         <div class="row align-items-center g-5">
 
-
             <div class="col-lg-6">
 
-                <span class="section-label">
-                    A NOSSA CASA
-                </span>
+                <span class="section-label">A NOSSA CASA</span>
 
                 <h2>
-                    Sabores simples,
+                    Sabores tradicionais,
                     feitos com dedicação
                 </h2>
 
                 <p>
                     O Estrela do Sado é um restaurante situado
                     nas Praias do Sado, em Setúbal, dedicado
-                    à cozinha portuguesa caseira.
+                    à cozinha portuguesa caseira e aos sabores tradicionais.
                 </p>
 
                 <p>
-                    Aqui valorizamos uma cozinha simples,
-                    saborosa e preparada com dedicação,
-                    proporcionando aos nossos clientes
-                    uma refeição num ambiente familiar e acolhedor.
+                    Aqui valorizamos pratos preparados com cuidado,
+                    num ambiente familiar e acolhedor,
+                    onde a tradição está presente em cada refeição.
                 </p>
 
                 <p>
-                    Uma casa onde os sabores tradicionais
-                    e a comida preparada de forma caseira
-                    fazem parte de cada refeição.
+                    Do peixe grelhado aos pratos caseiros,
+                    procuramos proporcionar uma experiência saborosa
+                    e genuinamente portuguesa.
                 </p>
 
             </div>
-
 
             <div class="col-lg-6">
-
-                <div class="image-placeholder">
-
-                    <span>
-                        Fotografia do restaurante
-                    </span>
-
-                </div>
-
+                <div class="photo-frame photo-frame--restaurante" role="img" aria-label="Restaurante Estrela do Sado"></div>
             </div>
-
 
         </div>
 
@@ -256,12 +245,9 @@
 
         <div class="row align-items-center g-5">
 
-
             <div class="col-lg-6 order-lg-2">
 
-                <span class="section-label">
-                    COZINHA
-                </span>
+                <span class="section-label">COZINHA</span>
 
                 <h2>
                     Tudo feito com
@@ -274,33 +260,18 @@
                 </p>
 
                 <p>
-                    O peixe grelhado destaca-se como uma das
-                    especialidades da casa, preparado de forma
-                    simples para preservar o sabor dos ingredientes.
+                    O peixe grelhado é uma das especialidades da casa,
+                    preparado de forma tradicional para valorizar
+                    o sabor dos ingredientes.
                 </p>
 
-                <a href="menu.html"
-                   class="text-link">
-
-                    Descobrir o menu →
-
-                </a>
+                <a href="menu.html" class="text-link">Descobrir o menu →</a>
 
             </div>
-
 
             <div class="col-lg-6 order-lg-1">
-
-                <div class="image-placeholder">
-
-                    <span>
-                        Fotografia dos pratos
-                    </span>
-
-                </div>
-
+                <div class="photo-frame photo-frame--pratos" role="img" aria-label="Pratos do Estrela do Sado"></div>
             </div>
-
 
         </div>
 
@@ -314,103 +285,57 @@
      O QUE NOS DEFINE
 ========================================= -->
 
-<section class="menu-section">
+<section class="menu-section about-values">
 
     <div class="container">
 
         <div class="menu-section-heading text-center mx-auto">
 
-            <span class="section-label">
-                O QUE NOS DEFINE
-            </span>
+            <span class="section-label">O QUE NOS DEFINE</span>
 
-            <h2>
-                Uma experiência simples
-                e familiar
-            </h2>
+            <h2>Tradição, sabor e ambiente familiar</h2>
 
             <p>
-                Tradição, sabor caseiro e uma casa
-                onde todos são bem-vindos.
+                Uma casa onde a cozinha portuguesa,
+                o sabor caseiro e a proximidade fazem a diferença.
             </p>
 
         </div>
 
-
         <div class="row g-4">
 
-
-            <!-- CASEIRO -->
-
             <div class="col-md-4">
-
                 <div class="about-card h-100">
-
-                    <div class="about-card-icon">
-                        🍽️
-                    </div>
-
-                    <h3>
-                        Caseiro
-                    </h3>
-
+                    <div class="about-card-icon">✦</div>
+                    <h3>Cozinha caseira</h3>
                     <p>
-                        Cozinha portuguesa preparada
-                        de forma simples e caseira.
+                        Pratos de inspiração portuguesa,
+                        preparados com sabor e dedicação.
                     </p>
-
                 </div>
-
             </div>
 
-
-            <!-- PEIXE -->
-
             <div class="col-md-4">
-
                 <div class="about-card h-100">
-
-                    <div class="about-card-icon">
-                        🐟
-                    </div>
-
-                    <h3>
-                        Peixe grelhado
-                    </h3>
-
+                    <div class="about-card-icon">≈</div>
+                    <h3>Peixe grelhado</h3>
                     <p>
                         Uma das especialidades da casa,
-                        preparada para preservar todo o seu sabor.
+                        preparada de forma tradicional.
                     </p>
-
                 </div>
-
             </div>
-
-
-            <!-- LOCALIZAÇÃO -->
 
             <div class="col-md-4">
-
                 <div class="about-card h-100">
-
-                    <div class="about-card-icon">
-                        📍
-                    </div>
-
-                    <h3>
-                        Praias do Sado
-                    </h3>
-
+                    <div class="about-card-icon">★</div>
+                    <h3>Ambiente familiar</h3>
                     <p>
-                        Estamos nas Praias do Sado,
-                        em Setúbal.
+                        Um espaço acolhedor nas Praias do Sado,
+                        ideal para desfrutar de uma boa refeição.
                     </p>
-
                 </div>
-
             </div>
-
 
         </div>
 
@@ -426,52 +351,29 @@
 
 <section class="schedule">
 
-    <div class="container">
+        <div class="container">
 
-        <div class="schedule-box">
+            <div class="schedule-box">
 
-            <div>
+                <div>
+                    <span class="section-label">HORÁRIO</span>
+                    <h2>Apenas almoços</h2>
+                    <p>
+                        Estamos abertos de segunda-feira a sábado,
+                        das 11:30 às 15:30.
+                    </p>
+                    <p><strong>Domingo:</strong> encerrado.</p>
+                </div>
 
-                <span class="section-label">
-                    HORÁRIO
-                </span>
-
-                <h2>
-                    Apenas almoços
-                </h2>
-
-                <p>
-                    Estamos abertos para almoço
-                    de segunda-feira a sábado,
-                    das 12:00 às 15:00.
-                </p>
-
-                <p>
-                    <strong>Domingo:</strong> encerrado.
-                </p>
-
-            </div>
-
-
-            <div class="schedule-time">
-
-                <strong>
-                    12:00
-                </strong>
-
-                <span>
-                    —
-                </span>
-
-                <strong>
-                    15:00
-                </strong>
+                <div class="schedule-time">
+                    <strong>11:30</strong>
+                    <span>—</span>
+                    <strong>15:30</strong>
+                </div>
 
             </div>
 
         </div>
-
-    </div>
 
 </section>
 
@@ -481,29 +383,22 @@
      MARCAÇÃO
 ========================================= -->
 
-<section class="reservation">
+<section class="reservation" id="marcacao">
 
     <div class="container text-center">
 
-        <span class="section-label">
-            RESERVE A SUA MESA
-        </span>
-
-        <h2>
-            Venha conhecer o Estrela do Sado
-        </h2>
+        <span class="section-label">RESERVE A SUA MESA</span>
+        <h2>Venha conhecer o Estrela do Sado</h2>
 
         <p>
             Faça a sua marcação no dia anterior
             ou no próprio dia até às 11:00.
         </p>
 
-        <a href="tel:+351265793486"
-           class="button button-primary">
-
-            Ligar: 265 793 486
-
-        </a>
+        <div class="hero-buttons justify-content-center contact-actions">
+            <a href="tel:+351265793486" class="button button-primary">265 793 486</a>
+            <a href="tel:+351919290050" class="button button-secondary">919 290 050</a>
+        </div>
 
     </div>
 
@@ -524,119 +419,75 @@
 
         <div class="row g-5">
 
-
             <div class="col-lg-6">
 
-                <a href="index.html"
-                   class="restaurant-logo footer-logo">
+                <a href="index.html" class="restaurant-logo footer-logo">
 
-                    <span class="logo-icon">
-                        E
+                    <span class="logo-icon" aria-hidden="true">
+                        <img src="images/logo-symbol.svg" alt="">
                     </span>
 
                     <span class="logo-text">
-
-                        <strong>
-                            Estrela do Sado
-                        </strong>
-
-                        <small>
-                            RESTAURANTE
-                        </small>
-
+                        <strong>Estrela do Sado</strong>
+                        <small>RESTAURANTE</small>
                     </span>
 
                 </a>
 
                 <p>
-                    Cozinha portuguesa caseira
+                    Cozinha portuguesa caseira,
+                    peixe grelhado e sabores tradicionais
                     nas Praias do Sado.
                 </p>
 
             </div>
 
-
             <div class="col-md-3">
 
-                <h3>
-                    Contacto
-                </h3>
+                <h3>Contacto</h3>
 
-                <a href="tel:+351265793486">
-                    265 793 486
-                </a>
+                <a href="tel:+351265793486">265 793 486</a>
+                <a href="tel:+351919290050">919 290 050</a>
 
-                                <!-- FACEBOOK -->
-
-                <a
-                    href="https://www.facebook.com/estreladosado/"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
+                <a href="https://www.facebook.com/estreladosado/"
+                   target="_blank"
+                   rel="noopener noreferrer">
                     Facebook
-
                 </a>
-                
+
                 <p>
-                    Rua Principal de Praias do Sado, nº 295
-                    <br>
+                    Rua Principal das Praias do Sado, 295<br>
                     2910-345 Setúbal
                 </p>
 
                 <p>
-                    Segunda a sábado
-                    <br>
-                    12:00 — 15:00
+                    Segunda a sábado<br>
+                    11:30 — 15:30
                 </p>
 
-                <p>
-                    Domingo encerrado
-                </p>
+                <p>Domingo encerrado</p>
 
             </div>
-
 
             <div class="col-md-3">
 
-                <h3>
-                    Navegação
-                </h3>
+                <h3>Navegação</h3>
 
-                <a href="index.html">
-                    Início
-                </a>
-
-                <a href="menu.html">
-                    Menu
-                </a>
-
-                <a href="sobre.html">
-                    Sobre nós
-                </a>
-
-                <a href="contacto.html">
-                    Contactos
-                </a>
+                <a href="index.html">Início</a>
+                <a href="menu.html">Menu</a>
+                <a href="sobre.html">Sobre nós</a>
+                <a href="contacto.html">Contactos</a>
 
             </div>
-
 
         </div>
 
     </div>
 
-
     <div class="footer-bottom">
-
         <div class="container">
-
-            <p>
-                © 2026 Estrela do Sado.
-                Todos os direitos reservados.
-            </p>
-
+            <p>© 2026 Estrela do Sado. Todos os direitos reservados.</p>
         </div>
-
     </div>
 
 </footer>
