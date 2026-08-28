@@ -216,7 +216,7 @@ img {
             rgba(11, 45, 69, 0.72),
             rgba(11, 45, 69, 0.28)
         ),
-        url("../images/hero.jpg") center / cover no-repeat;
+        url("../images/hero-home.jpg") center / cover no-repeat;
 }
 
 .hero-content {
@@ -783,7 +783,7 @@ img {
                 rgba(11, 45, 69, 0.94),
                 rgba(11, 45, 69, 0.65)
             ),
-            url("../images/hero.jpg") center / cover no-repeat;
+            url("../images/hero-home.jpg") center / cover no-repeat;
     }
 
     .hero-content {
@@ -1330,20 +1330,32 @@ img {
     --photo-image: url("../images/restaurante.jpg");
 }
 
+.photo-frame--interior {
+    --photo-image: url("../images/interior.jpg");
+    background-position: center 45%;
+}
+
 .photo-frame--pratos {
     --photo-image: url("../images/pratos.jpg");
 }
 
 .photo-frame--choco {
     --photo-image: url("../images/choco-frito.jpg");
+    background-position: center;
 }
 
 .photo-frame--carne {
     --photo-image: url("../images/prato-carne.jpg");
+    background-position: center;
+}
+
+.photo-frame--sobremesas {
+    --photo-image: url("../images/sobremesas.jpg");
+    background-position: center;
 }
 
 .photo-frame--gallery {
-    min-height: 330px;
+    min-height: 310px;
 }
 
 .menu-gallery {
@@ -1471,5 +1483,28 @@ img {
 
     .contact-actions .button {
         width: 100%;
+    }
+}
+
+/* Ajustes das fotografias reais */
+.menu-hero--menu::before {
+    background-position: center 48%;
+}
+
+.menu-hero--sobre::before {
+    background-position: center 45%;
+}
+
+.menu-hero--contactos::before {
+    background-position: center 52%;
+}
+
+.photo-frame--peixe {
+    background-position: center 48%;
+}
+
+@media (max-width: 575.98px) {
+    .photo-frame--interior {
+        background-position: center 40%;
     }
 }
